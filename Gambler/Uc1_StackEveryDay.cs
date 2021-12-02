@@ -7,18 +7,11 @@ namespace Gambler
     class Uc1_StackEveryDay
     {
 
-        public int PlayGame(int amount)
+        public void PlayGame()
         {
-            int remainingAmount = 0;
+            int CashPerDay = 100;
             int numberGame = 10;
 
-            for(int i = 1; i < numberGame; i++)
-            {
-                remainingAmount = remainingAmount - amount;
-            }
-            
-
-            return remainingAmount;
         }
 
 
