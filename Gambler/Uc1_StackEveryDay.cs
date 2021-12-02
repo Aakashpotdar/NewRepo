@@ -4,16 +4,16 @@ using System.Text;
 
 namespace Gambler
 {
-    class Uc1_StackEveryDay
+    public class Uc1_StackEveryDay
     {
 
-        public void PlayGame()
+     public void PlayGame()
         {
-            int CashPerDay = 100;
-            int betAmount = 1;
-
+                public static int CashPerDay = 100;
+                public static int betAmount = 1;
         }
-
-
     }
 }
+
+
+
