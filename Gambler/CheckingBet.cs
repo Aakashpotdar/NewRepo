@@ -6,21 +6,25 @@ namespace Gambler
 {
     public class CheckingBet
     {
-        public void checkGame()
+        static int CashPerDay = 100;
+        static int BetAmount = 1;
+             
+                
+    
+    public void checkGame()
         {
-            Uc1_StackEveryDay ObjAmount = new Uc1_StackEveryDay();
-
+            CheckingBet obj = new CheckingBet();
             Random random = new Random();
             int GameWinLoos = random.Next(0, 2);
 
             if (GameWinLoos == 1)
             {
-                Uc1_StackEveryDay.CashPerDay++;
+                CashPerDay= CashPerDay+BetAmount;
                 Console.WriteLine("You won the Game");
             }
             else
             {
-                Uc1_StackEveryDay.CashPerDay--;
+                CashPerDay = CashPerDay + BetAmount;
                 Console.WriteLine("You loss the Game");
             }
         }
