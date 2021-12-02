@@ -10,7 +10,7 @@ namespace Gambler
         public void PlayGame()
         {
             int CashPerDay = 100;
-            int numberGame = 10;
+            int betAmount = 1;
 
         }
 
